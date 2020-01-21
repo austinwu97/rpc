@@ -1,9 +1,3 @@
-# README.txt contains instructions how to build and run your code.
-
-# TODO: document how to invoke protoc in order to generate the stubs in your
-# language of choice.
-# YOUR INSTRUCTIONS GO HERE
-
 I chose python as my language of choice. 
 First, activate the virtual env and run:
 pip install grpcio-tools
@@ -13,14 +7,7 @@ and run the following command:
 
 	python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. debate.proto 
 
-
-# TODO: document how to build your server and client code (if applicable)
-# YOUR INSTRUCTIONS GO HERE
-
 No need to build server and client 
-
-# TODO: document how run your server (on localhost)
-# YOUR INSTRUCTIONS GO HERE
 
 To run the server, make sure you are in the correct directory and run:
 
