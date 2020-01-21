@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package routeguide;
+
+
+// The greeting service definition.
+service Candidate {
+  // Sends a answer
+  rpc Answer (AnswerRequest) returns (AnswerReply) {}
+  // Elaborate
+  rpc Elaborate (ElaborateRequest) returns (ElaborateReply) {}
+}
+
+// AnswerRequest
+message AnswerRequest {
+  string question = 1;
+}
+
+// AnswerReply 
+message AnswerReply {
+  string answer = 1;
+}
+
+//ElaborateRequest
+message ElaborateRequest {
+  string topic = 1;
+  repeated int32 blah_run = 2;
+}
+
+//ElaborateReply
+message ElaborateReply {
+  string answer = 1;
+}
+
+
+
+
